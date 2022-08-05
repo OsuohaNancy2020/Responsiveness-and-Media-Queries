@@ -1,8 +1,102 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(./Fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(./Fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(./Fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(./Fonts/Poppins-Light.ttf);
 }
 
 body{
-    
+    background-color: aliceblue;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Poppins;
+}
+
+main{
+    background-image: url(./img/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 100vh 100vh;
+    background-color: hsl(0, 100%, 74%);
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    padding: 15px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+.div1 h1{
+    font-weight: bold;
+    color: white;
+    align-content: center;
+    font-size: 50px;
+    line-height: 1.0;
+}
+
+.div1 p{
+    color: white;
+    align-content: center;
+}
+
+.divmain{
+    display: flex;
+    margin: 0 auto;
+}
+
+.top{
+    background-color: hsl(248, 32%, 49%);
+    font-weight: lighter;
+    margin: 30px;
+    padding: 1px 1px;
+    line-height: 1.0;
+}
+
+.top p{
+    color: white;
+    justify-content: space-evenly;
+}
+
+.highlight{
+    color: white;
+    font-weight: bold;
+}
+
+.bottom{
+    background-color: white;
+    margin: 30px;
+    padding: 1px 1px;
+}
+
+form{
+    width: 100%;
+}
+
+.btn1{
+    background-color: hsl(154, 59%, 51%);
+    width: 80%;
+    border: 0;
+    padding: 10px;
+    color: white;
+    font-size: small;
 }
