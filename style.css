@@ -29,21 +29,20 @@ body{
     font-size: 16px;
     line-height: 1.5;
     font-family: Poppins;
+    margin: auto;
 }
 
 main{
     background-image: url(./img/bg-intro-desktop.png);
     background-repeat: no-repeat;
-    background-size: 100vh 100vh;
     background-color: hsl(0, 100%, 74%);
     margin: auto;
-    width: 80%;
-    height: 80%;
+    max-width: 80%;
+    max-height: 80%;
+    display: flex;
     padding: 15px;
     justify-content: center;
-    display: flex;
     align-items: center;
-    margin-top: auto;
 }
 
 .div1 h1{
@@ -67,14 +66,21 @@ main{
 .top{
     background-color: hsl(248, 32%, 49%);
     font-weight: lighter;
-    margin: 30px;
+    margin: 20px;
     padding: 1px 1px;
     line-height: 1.0;
+    border: 0;
+    border-radius: 10px;
+    align-items: center;
+    justify-content:center;
 }
 
 .top p{
+    font-size: 10px;
     color: white;
-    justify-content: space-evenly;
+    text-align: center;
+    margin: 20px;
+   
 }
 
 .highlight{
@@ -83,20 +89,80 @@ main{
 }
 
 .bottom{
-    background-color: white;
-    margin: 30px;
-    padding: 1px 1px;
+    background-color: rgb(253, 253, 253);
+    margin: 20px;
+    padding: 20px;
+    border: 0;
+    border-radius: 10px;
+    justify-items: center;
+
 }
 
-form{
-    width: 100%;
+input[type=text]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 2px 0;
+        display: inline-block;
+        border: 0.5px  rgb(202, 202, 202);
+        border-style:solid;
+        border-radius: 4px;
+        box-sizing: border-box;
+        color: gray;
+        outline: none;
+        transition: 0.3s;
 }
+
+input[type=text]:focus {
+    border: 2px rgb(121, 121, 121);
+    border-style:solid;
+  }
+
+  input[type=text] :active{
+    border-color: hsl(0, 100%, 74%);
+
+  }
+
 
 .btn1{
     background-color: hsl(154, 59%, 51%);
-    width: 80%;
-    border: 0;
-    padding: 10px;
+    width: 100%;
     color: white;
-    font-size: small;
+    padding: 14px 20px;
+    margin: 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn1 :hover{
+    background-color: hsl(155, 86%, 67%);
+    transition: 0.5s;
+    
+}
+
+.foot{
+    width: 100%;
+    color: grey;
+    font-size: 8px;
+    margin-top: 0;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+p .tandc{
+    color:hsl(0, 100%, 74%);
+    font-weight: bold;
+    font-size: 10px;
+}
+
+@media screen and (max-width: 375px) {
+    main {
+        display: grid;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    main{
+        display: flex;
+    }
 }
